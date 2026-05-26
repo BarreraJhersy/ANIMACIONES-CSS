@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIPPATH SEMANA 6</title>
+    <style>
+        *{
+            padding:0px;
+            margin: 0px;
+        }
+        .marco1{
+            width: 200px;
+            height: 200px;
+            background-image: url(img/zully.webp);
+            background-size: cover;
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); 
+        }
+        .contenedor{
+            width: 1000px;
+            height: 800px;
+            border: 1px solid black;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .triangulo1{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            background-image: url(img/gorra.png);
+            background-size: 300px;
+            background-position: center;
+            top: 10px;
+            left: 400px;
+            z-index: 4;
+        }
+        .circulo1{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: yellow;
+            clip-path: circle(50%); 
+            top: 180px;
+            left: 400px;
+            z-index: 3;
+            background-image: url(img/cara.jpg);
+            background-size: 300px;
+            background-position: center;
+            animation: circulo1 2s forwards 3s; 
+        }
+        @keyframes circulo1 {
+            0%{
+                background-image: url(img/cara.jpg);;
+            }
+            100%{
+                background-image: url(img/triste.png);
+            }
+        }
+        .trapecio{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            clip-path: polygon(39% 0, 60% 0, 81% 100%, 16% 100%);
+            background-image: url(img/polo.webp);
+            background-size: 300px;
+            background-position: center;
+            top: 370px;
+            left: 400px;
+            z-index: 2;
+        }
+        .manos{
+            width: 400px;
+            height: 50px;
+            position: absolute;
+            background-color: sandybrown;
+            clip-path: polygon(96% 0, 100% 51%, 96% 100%, 6% 100%, 0% 50%, 6% 0);
+            top: 420px;
+            left: 290px;
+            z-index: 1;
+        }
+        .elipse1{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            background-color: black;
+            clip-path: ellipse(50% 24% at 50% 50%);
+            top: 530px;
+            left: 350px;
+            animation: elipse1 3s infinite ;
+        }
+        @keyframes elipse1 {
+            0%{ 
+                transform: rotate(0deg); 
+            }
+            60%{
+                transform: rotate(-15deg); 
+            }
+
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        .elipse2{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            background-color: black;
+            clip-path: ellipse(50% 24% at 50% 50%);
+            top: 530px;
+            left: 500px;
+            animation: elipse2 3s infinite ;
+        }
+        @keyframes elipse2 {
+            0%{ 
+                transform: rotate(0deg); 
+            }
+            60%{
+                transform: rotate(15deg); 
+            }
+
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        .triangulo2{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            clip-path: polygon(50% 100%, 24% 0, 81% 0); 
+            background-image: url(img/cono.png);
+            background-size: cover;
+            top: 340px;
+            left: 610px;
+            z-index: 4;
+        }
+        .circulo2{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: black;
+            clip-path: circle(50%);
+            top: 300px;
+            left: 620px; 
+            background-image: url(img/bolaT.jpg);
+            background-size: 70px;
+            background-position: center;
+            z-index: 5;
+        }
+        .circulo3{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: black;
+            clip-path: circle(50%); 
+            top: 300px;
+            left: 655px; 
+            background-image: url(img/bolaT.jpg);
+            background-size: 70px;
+            background-position: center;
+            z-index: 6;
+        }
+        .circulo4{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: black;
+            clip-path: circle(50%); 
+            top: 270px;
+            left: 637.5px; 
+            background-image: url(img/bolaT.jpg);
+            background-size: 70px;
+            background-position: center;
+            animation: circulo4 3s forwards, circulo42 10s forwards 3s;
+        }
+        @keyframes circulo4{
+            0%{
+                top: 270px;
+                left: 637.5px; 
+            }
+            50%{
+                top: 260px;
+                left: 650px; 
+            }
+            100%{
+                top: 600px;
+                left: 650px;
+            }
+        }
+        @keyframes circulo42{
+            0%{
+                top: 600px;
+                left: 650px;
+            }
+            100%{
+                top: 600px;
+                left: 100px;
+            }
+        }
+        .regresar{
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="marco1">  </div>
+    <div class="contenedor"> 
+        <div class="triangulo1">   
+        </div>
+        <div class="circulo1">   
+        </div>
+        <div class="trapecio">   
+        </div>
+        <div class="manos">   
+        </div>
+        <div class="elipse1">   
+        </div>
+        <div class="elipse2">   
+        </div>
+        <div class="triangulo2">   
+        </div>
+        <div class="circulo2">   
+        </div>
+        <div class="circulo3">   
+        </div>
+        <div class="circulo4">   
+        </div>
+    </div>
+    <div class="regresar">
+        <a href="../"> regresar</a>
+    </div>
+</body>
+</html>
