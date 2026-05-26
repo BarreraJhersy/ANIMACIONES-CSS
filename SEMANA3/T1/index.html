@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title> </title>
+        <style> 
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            .contenedor{
+                width: 800px;
+                height: 300px;
+                border: 1px solid black;
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+            }
+            .cuadrito{
+                width: 100px;
+                height: 100px;
+
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                animation: cuadrito 4s infinite;
+            }
+            .sherk{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+
+            }
+            @keyframes cuadrito{
+                0%{
+                    top:100px;
+                    left:0px;
+                    rotate: 45deg;
+                }
+                33%{
+                    top:0px;
+                    left:350px; 
+                    rotate: 0deg;
+                }
+                66%{
+                    top:200px;
+                    left:350px;
+                    rotate: 45deg;
+                }
+                100%{
+                    top:100px;
+                    left:700px;
+                    rotate: 0deg;
+                }
+            }
+            .cuadrito2{
+                width: 100px;
+                height: 100px;
+
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                animation: cuadrito 4s infinite 2s;
+            }
+            .sherk2{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+
+            }
+            @keyframes cuadrito2{
+                0%{
+                    top:100px;
+                    left:0px;
+                    rotate: 45deg;
+                }
+                33%{
+                    top:0px;
+                    left:350px; 
+                    rotate: 0deg;
+                }
+                66%{
+                    top:200px;
+                    left:350px;
+                    rotate: 45deg;
+                }
+                100%{
+                    top:100px;
+                    left:700px;
+                    rotate: 0deg;
+                }
+            }
+            .praderas{
+                position: absolute;
+                top: -450px;
+                left: 0px;
+                width: 100%;
+                z-index: -1;
+            }
+            .cielo{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                z-index: -2;
+            }
+            .regresar {
+                width: 80px;
+                height: 20px;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <img class="cielo" src="img/cielo.png" alt="">
+            <img class="praderas" src="img/praderas.png" alt="">
+            <div class="cuadrito">
+                <img class="sherk" src="img/sherk.jpg" alt="">
+            </div>
+                <div class="cuadrito2">
+                <img class="sherk2" src="img/sherk.jpg" alt="">
+            </div>
+        </div>
+        <div class="regresar">
+            <a href="../"> regresar</a>
+        </div>
+    </body>
+</html>
